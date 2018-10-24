@@ -1,0 +1,28 @@
+extends layout
+block content
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3.teal
+                h3 Lista Tarefas
+            .w3-container
+                table.w3-table-all
+                    tr
+                        th Data Registo
+                        th Prazo
+                        th Descrição
+                        th Tipo
+                        th
+                            button
+                                a(href='/registo') Regista Tarefa 
+                    each ta, index in lista
+                        if ta.estado==1
+                            tr
+                                td= ta.registo
+                                td= ta.prazo
+                                td= ta.descricao
+                                td= ta.tipo
+                                td
+                                    a(href="/remover/"+index) Remover
+            footer.w3-container.w3.teal
+                address Gerado por FormApp
+

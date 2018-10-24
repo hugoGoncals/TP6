@@ -1,0 +1,38 @@
+/ -> pag. principal
+/registo -> forulário
+/processaFor -> recibo
+
+-aula6
+	-server-aluno-1.js
+	-layout.pug
+	-form-aluno.pug
+	-aluno-recibo.pug
+	-erro.pug
+	-stylesheets
+		-w3.css
+
+method=''
+	GET: recuperaçao
+	POST: envio de info
+	PUT: alteraçao
+	DELETE: remoçao
+
+
+console(typeof(var))-> permite verificar qual a variavel que esta a crachar
+console.dir(var)
+
+TPC
+aplicação semelhante à da aula6 com informação referente a uma lista de tarefas
+Lista de tarefas
+	>tarefa
+		-data de registo
+		-prazo
+		-Descrição
+		-tipo
+
+/ -> pag. principal
+/registo de uma tarefa
+/lista
+/apagar  (desafio) (conselho incluir chave vazia)
+
+fazer persistencia em jsonfile
